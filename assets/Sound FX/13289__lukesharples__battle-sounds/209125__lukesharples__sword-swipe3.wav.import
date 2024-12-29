@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dv6rron2ij4ha"
+path="res://.godot/imported/209125__lukesharples__sword-swipe3.wav-d0d1b223ba28801dde537949844f6a01.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209125__lukesharples__sword-swipe3.wav"
+dest_files=["res://.godot/imported/209125__lukesharples__sword-swipe3.wav-d0d1b223ba28801dde537949844f6a01.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

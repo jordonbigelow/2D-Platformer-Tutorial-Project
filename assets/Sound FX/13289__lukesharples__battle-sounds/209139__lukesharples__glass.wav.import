@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://br6tq4s427fkl"
+path="res://.godot/imported/209139__lukesharples__glass.wav-dab15922ef99023a84f074c850fe29d0.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209139__lukesharples__glass.wav"
+dest_files=["res://.godot/imported/209139__lukesharples__glass.wav-dab15922ef99023a84f074c850fe29d0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

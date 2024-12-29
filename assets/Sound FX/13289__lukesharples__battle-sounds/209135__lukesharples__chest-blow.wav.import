@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cu8k8eix1p4kc"
+path="res://.godot/imported/209135__lukesharples__chest-blow.wav-8deea6d6de2e98a3d81b1de1865e3684.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209135__lukesharples__chest-blow.wav"
+dest_files=["res://.godot/imported/209135__lukesharples__chest-blow.wav-8deea6d6de2e98a3d81b1de1865e3684.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

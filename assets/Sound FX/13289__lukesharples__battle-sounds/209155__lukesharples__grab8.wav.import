@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bxowu5842tklt"
+path="res://.godot/imported/209155__lukesharples__grab8.wav-be0bf6101797e64c5786f9a74502e99a.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209155__lukesharples__grab8.wav"
+dest_files=["res://.godot/imported/209155__lukesharples__grab8.wav-be0bf6101797e64c5786f9a74502e99a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

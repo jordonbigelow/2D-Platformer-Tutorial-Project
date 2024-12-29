@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dw8md31w1nxnc"
+path="res://.godot/imported/209088__lukesharples__tissue-slice-wound12.wav-5c08d2ab0719590f7d16a2e0d0f16cb0.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209088__lukesharples__tissue-slice-wound12.wav"
+dest_files=["res://.godot/imported/209088__lukesharples__tissue-slice-wound12.wav-5c08d2ab0719590f7d16a2e0d0f16cb0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

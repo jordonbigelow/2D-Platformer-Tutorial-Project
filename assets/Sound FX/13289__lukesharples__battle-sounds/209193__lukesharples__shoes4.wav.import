@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlnypn4211ccu"
+path="res://.godot/imported/209193__lukesharples__shoes4.wav-dcaa97f1b45ae8765b703f7ed8bd7ccc.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209193__lukesharples__shoes4.wav"
+dest_files=["res://.godot/imported/209193__lukesharples__shoes4.wav-dcaa97f1b45ae8765b703f7ed8bd7ccc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

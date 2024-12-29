@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bccg5tpoua0un"
+path="res://.godot/imported/209140__lukesharples__wood-impact1.wav-d81cae9ccdbd3d78a3addc162e0d2033.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209140__lukesharples__wood-impact1.wav"
+dest_files=["res://.godot/imported/209140__lukesharples__wood-impact1.wav-d81cae9ccdbd3d78a3addc162e0d2033.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

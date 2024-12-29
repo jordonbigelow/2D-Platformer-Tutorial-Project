@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bifbsmc0x6wek"
+path="res://.godot/imported/209178__lukesharples__harugh.wav-e174d91fcafe9af09f5cb30a008b9aac.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209178__lukesharples__harugh.wav"
+dest_files=["res://.godot/imported/209178__lukesharples__harugh.wav-e174d91fcafe9af09f5cb30a008b9aac.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

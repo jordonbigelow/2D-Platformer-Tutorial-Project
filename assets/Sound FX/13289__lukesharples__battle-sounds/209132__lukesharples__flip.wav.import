@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b50r2n82loq2b"
+path="res://.godot/imported/209132__lukesharples__flip.wav-3dc2db1162e1ebe8d7cf300b2ddca9d6.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209132__lukesharples__flip.wav"
+dest_files=["res://.godot/imported/209132__lukesharples__flip.wav-3dc2db1162e1ebe8d7cf300b2ddca9d6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

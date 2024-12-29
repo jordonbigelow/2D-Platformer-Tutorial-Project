@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c2pluvaau5q1h"
+path="res://.godot/imported/209157__lukesharples__kick4.wav-8b29b59e076aec53c8e08e616bf7dac7.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209157__lukesharples__kick4.wav"
+dest_files=["res://.godot/imported/209157__lukesharples__kick4.wav-8b29b59e076aec53c8e08e616bf7dac7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

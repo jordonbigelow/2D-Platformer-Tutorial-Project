@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6frrgj2f0xjt"
+path="res://.godot/imported/209179__lukesharples__urgaa.wav-55512a1f1a2322794a653fbf717ebc05.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209179__lukesharples__urgaa.wav"
+dest_files=["res://.godot/imported/209179__lukesharples__urgaa.wav-55512a1f1a2322794a653fbf717ebc05.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

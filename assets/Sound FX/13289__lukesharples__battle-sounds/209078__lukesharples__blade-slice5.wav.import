@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b31c485g7qmc5"
+path="res://.godot/imported/209078__lukesharples__blade-slice5.wav-83ace557b2d60c92b5fbc3590d8fd1e5.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209078__lukesharples__blade-slice5.wav"
+dest_files=["res://.godot/imported/209078__lukesharples__blade-slice5.wav-83ace557b2d60c92b5fbc3590d8fd1e5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

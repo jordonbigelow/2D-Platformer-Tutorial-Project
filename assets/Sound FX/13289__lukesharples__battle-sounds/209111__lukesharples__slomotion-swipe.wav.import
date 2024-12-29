@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cigtl8gvxsosi"
+path="res://.godot/imported/209111__lukesharples__slomotion-swipe.wav-9f145ec6cb2cfa7ee735f169c3d25071.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209111__lukesharples__slomotion-swipe.wav"
+dest_files=["res://.godot/imported/209111__lukesharples__slomotion-swipe.wav-9f145ec6cb2cfa7ee735f169c3d25071.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

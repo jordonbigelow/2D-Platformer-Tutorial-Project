@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c5iqy7drm4fyj"
+path="res://.godot/imported/209130__lukesharples__blood-spurt2.wav-1f1602742af522d96ee9443e88f872a5.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209130__lukesharples__blood-spurt2.wav"
+dest_files=["res://.godot/imported/209130__lukesharples__blood-spurt2.wav-1f1602742af522d96ee9443e88f872a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

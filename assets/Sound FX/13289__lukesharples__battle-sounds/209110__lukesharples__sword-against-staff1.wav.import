@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dacb2ijptdvj2"
+path="res://.godot/imported/209110__lukesharples__sword-against-staff1.wav-91f0a753f9ca4632d56d2a78ecae6f66.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/13289__lukesharples__battle-sounds/209110__lukesharples__sword-against-staff1.wav"
+dest_files=["res://.godot/imported/209110__lukesharples__sword-against-staff1.wav-91f0a753f9ca4632d56d2a78ecae6f66.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
