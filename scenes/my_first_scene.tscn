@@ -26,4 +26,3 @@ shape = SubResource("RectangleShape2D_yrk4d")
 
 [node name="Roger" parent="." instance=ExtResource("2_pckv8")]
 position = Vector2(574, 551)
-script = null
