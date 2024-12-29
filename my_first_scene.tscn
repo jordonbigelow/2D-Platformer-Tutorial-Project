@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://1p8l81fcn1ra"]
+
+[ext_resource type="Texture2D" uid="uid://y5xxcdlvuaef" path="res://icon.svg" id="1_du7mm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrk4d"]
+size = Vector2(128.5, 128)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Hello, World!"
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(573, 605.5)
+scale = Vector2(8.96875, 0.632812)
+texture = ExtResource("1_du7mm")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Icon"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/StaticBody2D"]
+position = Vector2(0.250008, 0)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_yrk4d")
