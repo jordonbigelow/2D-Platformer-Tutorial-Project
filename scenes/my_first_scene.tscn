@@ -22,7 +22,7 @@ texture = ExtResource("1_du7mm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Icon/StaticBody2D"]
 position = Vector2(0.250008, 0)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_yrk4d")
 
 [node name="Roger" parent="." instance=ExtResource("2_pckv8")]
+position = Vector2(574, 551)
