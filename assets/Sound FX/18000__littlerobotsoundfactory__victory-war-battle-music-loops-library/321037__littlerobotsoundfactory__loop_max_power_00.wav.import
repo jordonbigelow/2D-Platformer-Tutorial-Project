@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bytcjixy8oxaf"
+path="res://.godot/imported/321037__littlerobotsoundfactory__loop_max_power_00.wav-d8edee78c933f410150b99cf3e52c4a5.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/321037__littlerobotsoundfactory__loop_max_power_00.wav"
+dest_files=["res://.godot/imported/321037__littlerobotsoundfactory__loop_max_power_00.wav-d8edee78c933f410150b99cf3e52c4a5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

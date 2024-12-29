@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://64pvoxv21ew1"
+path="res://.godot/imported/320987__littlerobotsoundfactory__loop_boss_puppet_master_06.wav-d94b34ea10fca472c18e061a04fd2ae9.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/320987__littlerobotsoundfactory__loop_boss_puppet_master_06.wav"
+dest_files=["res://.godot/imported/320987__littlerobotsoundfactory__loop_boss_puppet_master_06.wav-d94b34ea10fca472c18e061a04fd2ae9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

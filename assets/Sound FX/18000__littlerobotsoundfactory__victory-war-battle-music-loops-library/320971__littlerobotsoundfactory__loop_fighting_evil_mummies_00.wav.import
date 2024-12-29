@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://iansreao7f0y"
+path="res://.godot/imported/320971__littlerobotsoundfactory__loop_fighting_evil_mummies_00.wav-d0a0cfe50a4c27f34a7c3bf1f8ddce3e.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/320971__littlerobotsoundfactory__loop_fighting_evil_mummies_00.wav"
+dest_files=["res://.godot/imported/320971__littlerobotsoundfactory__loop_fighting_evil_mummies_00.wav-d0a0cfe50a4c27f34a7c3bf1f8ddce3e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

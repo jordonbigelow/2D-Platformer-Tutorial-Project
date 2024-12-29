@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2jgq2scux0x5"
+path="res://.godot/imported/320964__littlerobotsoundfactory__loop_computer_feeling_good_01.wav-cf71a5ac9cc87b8a733ab2fb7bbf83dc.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/320964__littlerobotsoundfactory__loop_computer_feeling_good_01.wav"
+dest_files=["res://.godot/imported/320964__littlerobotsoundfactory__loop_computer_feeling_good_01.wav-cf71a5ac9cc87b8a733ab2fb7bbf83dc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

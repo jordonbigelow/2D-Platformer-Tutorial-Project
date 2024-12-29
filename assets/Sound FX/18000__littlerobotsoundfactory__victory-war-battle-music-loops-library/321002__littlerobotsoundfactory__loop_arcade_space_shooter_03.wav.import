@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cc7jbk28payek"
+path="res://.godot/imported/321002__littlerobotsoundfactory__loop_arcade_space_shooter_03.wav-9858b9b0639c2d8d35df97ea08bf7152.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/321002__littlerobotsoundfactory__loop_arcade_space_shooter_03.wav"
+dest_files=["res://.godot/imported/321002__littlerobotsoundfactory__loop_arcade_space_shooter_03.wav-9858b9b0639c2d8d35df97ea08bf7152.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

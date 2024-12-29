@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsaaftwwxo0vp"
+path="res://.godot/imported/321031__littlerobotsoundfactory__loop_jungle_war_drums_01.wav-508d87c336d6477e02799fb8c67eaf68.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/321031__littlerobotsoundfactory__loop_jungle_war_drums_01.wav"
+dest_files=["res://.godot/imported/321031__littlerobotsoundfactory__loop_jungle_war_drums_01.wav-508d87c336d6477e02799fb8c67eaf68.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

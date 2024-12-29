@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c4tvgu4petprm"
+path="res://.godot/imported/320957__littlerobotsoundfactory__loop_casual_space_exploration_10.wav-b54c46651a516601688129e03a576824.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/320957__littlerobotsoundfactory__loop_casual_space_exploration_10.wav"
+dest_files=["res://.godot/imported/320957__littlerobotsoundfactory__loop_casual_space_exploration_10.wav-b54c46651a516601688129e03a576824.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://03yxmbrwdsll"
+path="res://.godot/imported/321029__littlerobotsoundfactory__loop_hard_working_alien_04.wav-1f2b3d67e4c63e168facdc64c6cee466.sample"
+
+[deps]
+
+source_file="res://assets/Sound FX/18000__littlerobotsoundfactory__victory-war-battle-music-loops-library/321029__littlerobotsoundfactory__loop_hard_working_alien_04.wav"
+dest_files=["res://.godot/imported/321029__littlerobotsoundfactory__loop_hard_working_alien_04.wav-1f2b3d67e4c63e168facdc64c6cee466.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
