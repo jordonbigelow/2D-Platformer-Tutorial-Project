@@ -5,30 +5,14 @@ const JUMP_VELOCITY = -400.0
 @export var _speed: float = 8.0
 @export var _acceleration: float = 16.0
 @export var _deceleration: float = 32.0
-
 var _direction: float
-
-func face_left():
-	pass
-
-
-func face_right():
-	pass
-
-
-func run(direction: float):
-	_direction = direction
-
-
-func jump():
-	if is_on_floor():
-		velocity.y = JUMP_VELOCITY
 
 
 func _ready() -> void:
 	_speed *= Global.ppt
 	_acceleration *= Global.ppt
 	_deceleration *= Global.ppt
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -54,3 +38,20 @@ func _physics_process(delta: float) -> void:
 	# 	velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func face_left():
+	pass
+
+
+func face_right():
+	pass
+
+
+func run(direction: float):
+	_direction = direction
+
+
+func jump():
+	if is_on_floor():
+		velocity.y = JUMP_VELOCITY
