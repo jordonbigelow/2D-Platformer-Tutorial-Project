@@ -27,6 +27,8 @@ shape = SubResource("RectangleShape2D_yrk4d")
 
 [node name="Roger" parent="." instance=ExtResource("2_pckv8")]
 position = Vector2(574, 551)
+_acceleration = 600.0
+_deceleration = 1200.0
 
 [node name="Player" type="Node" parent="Roger"]
 script = ExtResource("3_mg0n8")
