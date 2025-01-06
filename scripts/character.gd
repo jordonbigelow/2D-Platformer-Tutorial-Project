@@ -10,6 +10,7 @@ const JUMP_VELOCITY = -400.0
 @export_category("Jump")
 @export var _jump_height: float = 2.5
 @export var _air_control: float = 0.5
+@export var _jump_dust: PackedScene
 
 @onready var _sprite: Sprite2D = $Sprite2D
 
@@ -55,6 +56,12 @@ func _air_physics(delta: float) -> void:
 	if _direction:
 		velocity.x = move_toward(velocity.x, _direction * _speed, _acceleration * _air_control * delta)
 
+
+func _spawn_dust(dust: PackedScene) -> void:
+	var _dust = dust.instantiate()
+	_dust.position = position
+	get_parent().add_child(_dust)
+
 func face_left():
 	_sprite.flip_h = true
 
@@ -70,6 +77,7 @@ func run(direction: float):
 func jump():
 	if is_on_floor():
 		velocity.y = _jump_velocity
+		_spawn_dust(_jump_dust)
 
 func stop_jump():
 	if velocity.y < 0:

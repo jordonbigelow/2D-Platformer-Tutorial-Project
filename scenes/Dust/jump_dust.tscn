@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bp4d82ipji6pn"]
+[gd_scene load_steps=9 format=3 uid="uid://bp4d82ipji6pn"]
 
 [ext_resource type="Texture2D" uid="uid://cu0m2viiucdni" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 01.png" id="1_vku5x"]
 [ext_resource type="Texture2D" uid="uid://cuy3hpcarriqx" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 02.png" id="2_fwfan"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cn0wl6ft4gc40" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 04.png" id="4_i3url"]
 [ext_resource type="Texture2D" uid="uid://dl5ovpeav65gi" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 05.png" id="5_3l53q"]
 [ext_resource type="Texture2D" uid="uid://cwbjmn5a0eeso" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 06.png" id="6_hkdkl"]
+[ext_resource type="Script" path="res://scripts/dust.gd" id="7_o2doi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5kby5"]
 animations = [{
@@ -35,4 +36,9 @@ animations = [{
 
 [node name="Dust Particles" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_5kby5")
+frame = 5
+frame_progress = 1.0
 offset = Vector2(0, -10)
+script = ExtResource("7_o2doi")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

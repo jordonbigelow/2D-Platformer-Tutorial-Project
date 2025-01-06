@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_0e4vp"]
 [ext_resource type="Texture2D" uid="uid://dbotojh23us1j" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_lbwtm"]
+[ext_resource type="PackedScene" uid="uid://bp4d82ipji6pn" path="res://scenes/Dust/jump_dust.tscn" id="2_68k5f"]
 [ext_resource type="Texture2D" uid="uid://dwc3xbspaacdc" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="3_ldjnj"]
 [ext_resource type="Texture2D" uid="uid://4ev17ycn77jq" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="4_mx7q7"]
 [ext_resource type="Texture2D" uid="uid://dsaxocmapf8w6" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_sx1ay"]
@@ -18,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://bbo0x7jutnrnh" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall/Fall 01.png" id="16_1k7at"]
 [ext_resource type="Texture2D" uid="uid://gu708byhtis1" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/05-Ground/Ground 01.png" id="17_x434t"]
 [ext_resource type="Texture2D" uid="uid://be7byx2j0rls1" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/05-Ground/Ground 02.png" id="18_cq1jc"]
-[ext_resource type="PackedScene" uid="uid://c781mveweswpp" path="res://scenes/Dust/fall_dust.tscn" id="19_g7cij"]
 
 [sub_resource type="Animation" id="Animation_7wmjr"]
 resource_name = "idle"
@@ -222,6 +222,7 @@ height = 28.0
 
 [node name="Roger" type="CharacterBody2D"]
 script = ExtResource("1_0e4vp")
+_jump_dust = ExtResource("2_68k5f")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
@@ -241,5 +242,3 @@ anim_player = NodePath("..")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -14)
 shape = SubResource("CapsuleShape2D_1a7np")
-
-[node name="Dust Particles" parent="." instance=ExtResource("19_g7cij")]
