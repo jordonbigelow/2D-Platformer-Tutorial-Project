@@ -127,7 +127,7 @@ tracks/1/loop_wrap = true
 tracks/1/keys = {
 "clips": [{
 "end_offset": 0.0,
-"start_offset": 0.0,
+"start_offset": 0.02,
 "stream": ExtResource("19_340od")
 }],
 "times": PackedFloat32Array(0)
