@@ -1,7 +1,49 @@
-[gd_scene load_steps=4 format=3 uid="uid://dvstklm2n57lb"]
+[gd_scene load_steps=11 format=3 uid="uid://dvstklm2n57lb"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_0e4vp"]
 [ext_resource type="Texture2D" uid="uid://dbotojh23us1j" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_lbwtm"]
+[ext_resource type="Texture2D" uid="uid://dwc3xbspaacdc" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="3_ldjnj"]
+[ext_resource type="Texture2D" uid="uid://4ev17ycn77jq" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="4_mx7q7"]
+[ext_resource type="Texture2D" uid="uid://dsaxocmapf8w6" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_sx1ay"]
+[ext_resource type="Texture2D" uid="uid://xrnprb1ks3r2" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="6_lrnbj"]
+
+[sub_resource type="Animation" id="Animation_7wmjr"]
+resource_name = "idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_lbwtm"), ExtResource("3_ldjnj"), ExtResource("4_mx7q7"), ExtResource("5_sx1ay"), ExtResource("6_lrnbj")]
+}
+
+[sub_resource type="Animation" id="Animation_q0pg5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_lbwtm")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_sintj"]
+_data = {
+"RESET": SubResource("Animation_q0pg5"),
+"idle": SubResource("Animation_7wmjr")
+}
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1a7np"]
 radius = 8.0
@@ -13,6 +55,11 @@ script = ExtResource("1_0e4vp")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -12)
 texture = ExtResource("1_lbwtm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_sintj")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -14)
