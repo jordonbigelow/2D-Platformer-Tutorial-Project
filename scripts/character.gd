@@ -52,6 +52,11 @@ func _ground_physics(delta: float) -> void:
 
 
 func _air_physics(delta: float) -> void:
+	if sign(_direction) == -1:
+		face_left()
+	elif sign(_direction) == 1:
+		face_right()
+
 	velocity.y += gravity * delta
 	if _direction:
 		velocity.x = move_toward(velocity.x, _direction * _speed, _acceleration * _air_control * delta)

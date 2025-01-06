@@ -32,6 +32,8 @@ animations = [{
 
 [node name="Dust Particles" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_5kby5")
+frame = 4
+frame_progress = 1.0
 offset = Vector2(0, -10)
 script = ExtResource("6_2pg6c")
 
