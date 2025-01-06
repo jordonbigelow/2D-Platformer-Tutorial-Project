@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const JUMP_VELOCITY = -400.0
+#const JUMP_VELOCITY = -400.0
 
 @export_category("Locomotion")
 @export var _speed: float = 8.0

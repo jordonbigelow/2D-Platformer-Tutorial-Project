@@ -246,7 +246,7 @@ advance_mode = 2
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_joy54"]
 priority = 0
 advance_mode = 2
-advance_expression = "velocity.y > 0"
+advance_expression = "velocity.y < 0"
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wubx0"]
 advance_mode = 2
