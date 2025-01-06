@@ -11,6 +11,8 @@ const JUMP_VELOCITY = -400.0
 @export var _jump_height: float = 2.5
 @export var _air_control: float = 0.5
 
+@onready var _sprite: Sprite2D = $Sprite2D
+
 var _jump_velocity: float
 var _direction: float
 
@@ -35,6 +37,11 @@ func _physics_process(delta: float) -> void:
 
 
 func _ground_physics(delta: float) -> void:
+	if sign(_direction) == -1:
+		face_left()
+	elif sign(_direction) == 1:
+		face_right()
+
 	if _direction == 0:
 		velocity.x = move_toward(velocity.x, 0, _deceleration * delta)
 	elif velocity.x == 0 || sign(_direction) == sign(velocity.x):
@@ -49,11 +56,11 @@ func _air_physics(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, _direction * _speed, _acceleration * _air_control * delta)
 
 func face_left():
-	pass
+	_sprite.flip_h = true
 
 
 func face_right():
-	pass
+	_sprite.flip_h = false
 
 
 func run(direction: float):
