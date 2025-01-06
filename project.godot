@@ -20,7 +20,8 @@ Global="*res://scripts/auto_loads/global.gd"
 
 [display]
 
-window/stretch/scale=1.5
+window/size/viewport_width=2160
+window/size/viewport_height=1440
 
 [input]
 

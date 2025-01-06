@@ -274,7 +274,7 @@ states/ground/position = Vector2(685.44, 8.36999)
 states/jump/node = SubResource("AnimationNodeAnimation_trllw")
 states/jump/position = Vector2(333.44, 8.36999)
 transitions = ["Start", "Locomotion", SubResource("AnimationNodeStateMachineTransition_rlxdr"), "Locomotion", "jump", SubResource("AnimationNodeStateMachineTransition_joy54"), "jump", "fall", SubResource("AnimationNodeStateMachineTransition_wubx0"), "fall", "ground", SubResource("AnimationNodeStateMachineTransition_dgcsp"), "ground", "Locomotion", SubResource("AnimationNodeStateMachineTransition_sapbd"), "Locomotion", "fall", SubResource("AnimationNodeStateMachineTransition_pa660")]
-graph_offset = Vector2(-241.92, -111.135)
+graph_offset = Vector2(129.255, 8.83502)
 
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_26q0r"]
 advance_mode = 2
