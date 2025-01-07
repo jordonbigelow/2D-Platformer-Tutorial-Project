@@ -25,23 +25,6 @@
 [ext_resource type="Texture2D" uid="uid://clwh3sdlbd2k2" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/05-Ground/Ground 02.png" id="20_ayn6u"]
 [ext_resource type="PackedScene" uid="uid://c781mveweswpp" path="res://scenes/Dust/fall_dust.tscn" id="24_8gwvu"]
 
-[sub_resource type="Animation" id="Animation_ofhbt"]
-resource_name = "idle"
-length = 0.8
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("1_xtlcm"), ExtResource("2_s5fui"), ExtResource("3_tpj2y"), ExtResource("4_p7mu3"), ExtResource("5_7nq2g"), ExtResource("6_jtin5"), ExtResource("7_j11t6"), ExtResource("8_43yme")]
-}
-
 [sub_resource type="Animation" id="Animation_817fc"]
 length = 0.001
 tracks/0/type = "value"
@@ -55,53 +38,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [ExtResource("1_xtlcm")]
-}
-
-[sub_resource type="Animation" id="Animation_ft6k5"]
-resource_name = "run"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [ExtResource("9_f4asi"), ExtResource("10_ng62r"), ExtResource("11_1sxfc"), ExtResource("12_trlpx"), ExtResource("13_38t2t"), ExtResource("14_2vhog")]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("..")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [ExtResource("17_7crxh")],
-"method": &"_spawn_dust"
-}]
-}
-
-[sub_resource type="Animation" id="Animation_kcaml"]
-resource_name = "jump"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [ExtResource("15_7ryrf"), ExtResource("16_erdtk"), ExtResource("17_i0x0m")]
 }
 
 [sub_resource type="Animation" id="Animation_lo4ex"]
@@ -146,6 +82,70 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [ExtResource("24_8gwvu")],
+"method": &"_spawn_dust"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_ofhbt"]
+resource_name = "idle"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_xtlcm"), ExtResource("2_s5fui"), ExtResource("3_tpj2y"), ExtResource("4_p7mu3"), ExtResource("5_7nq2g"), ExtResource("6_jtin5"), ExtResource("7_j11t6"), ExtResource("8_43yme")]
+}
+
+[sub_resource type="Animation" id="Animation_kcaml"]
+resource_name = "jump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("15_7ryrf"), ExtResource("16_erdtk"), ExtResource("17_i0x0m")]
+}
+
+[sub_resource type="Animation" id="Animation_ft6k5"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_f4asi"), ExtResource("10_ng62r"), ExtResource("11_1sxfc"), ExtResource("12_trlpx"), ExtResource("13_38t2t"), ExtResource("14_2vhog")]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [ExtResource("17_7crxh")],
 "method": &"_spawn_dust"
 }]
 }
@@ -256,6 +256,7 @@ height = 22.0
 [node name="FierceTooth" type="CharacterBody2D"]
 script = ExtResource("1_3tf57")
 _jump_dust = ExtResource("2_6jpwv")
+is_flipped_h = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xtlcm")
