@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://144n6wv8m4rq"]
+[gd_scene load_steps=21 format=3 uid="uid://144n6wv8m4rq"]
 
 [ext_resource type="Texture2D" uid="uid://djiugi7lkcawv" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="1_xtlcm"]
 [ext_resource type="Texture2D" uid="uid://b52k3wit78vli" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 02.png" id="2_s5fui"]
@@ -8,6 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://bgh0dtkyikxlq" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 06.png" id="6_jtin5"]
 [ext_resource type="Texture2D" uid="uid://bryxr2xxt40sj" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 07.png" id="7_j11t6"]
 [ext_resource type="Texture2D" uid="uid://dpwxqkq2qnycg" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 08.png" id="8_43yme"]
+[ext_resource type="Texture2D" uid="uid://nn8xh8kwyt6r" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 01.png" id="9_f4asi"]
+[ext_resource type="Texture2D" uid="uid://c7j7r6a7rf3ep" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 02.png" id="10_ng62r"]
+[ext_resource type="Texture2D" uid="uid://b1i2s1wfwhact" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 03.png" id="11_1sxfc"]
+[ext_resource type="Texture2D" uid="uid://caj04k6diph4w" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 04.png" id="12_trlpx"]
+[ext_resource type="Texture2D" uid="uid://cowkaygbd50s4" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 05.png" id="13_38t2t"]
+[ext_resource type="Texture2D" uid="uid://dwoct6357h20d" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/02-Run/Run 06.png" id="14_2vhog"]
 
 [sub_resource type="Animation" id="Animation_ofhbt"]
 resource_name = "idle"
@@ -41,10 +47,28 @@ tracks/0/keys = {
 "values": [ExtResource("1_xtlcm")]
 }
 
+[sub_resource type="Animation" id="Animation_ft6k5"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("9_f4asi"), ExtResource("10_ng62r"), ExtResource("11_1sxfc"), ExtResource("12_trlpx"), ExtResource("13_38t2t"), ExtResource("14_2vhog")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtfks"]
 _data = {
 "RESET": SubResource("Animation_817fc"),
-"idle": SubResource("Animation_ofhbt")
+"idle": SubResource("Animation_ofhbt"),
+"run": SubResource("Animation_ft6k5")
 }
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_8uda2"]
