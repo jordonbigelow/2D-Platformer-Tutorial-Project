@@ -37,3 +37,5 @@ script = ExtResource("3_mg0n8")
 position = Vector2(0, -60)
 zoom = Vector2(3, 3)
 position_smoothing_speed = 10.0
+
+[node name="Crabby" type="CharacterBody2D" parent="."]
