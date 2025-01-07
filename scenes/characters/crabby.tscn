@@ -1,15 +1,76 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8lisg638c7px"]
+[gd_scene load_steps=16 format=3 uid="uid://b8lisg638c7px"]
 
+[ext_resource type="Script" path="res://scripts/character.gd" id="1_76mg2"]
 [ext_resource type="Texture2D" uid="uid://d3p50fypxyrdd" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="1_mne6h"]
+[ext_resource type="Texture2D" uid="uid://bn1blj6fmwd1m" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 02.png" id="3_tkhuq"]
+[ext_resource type="Texture2D" uid="uid://dxpsbvcvrah7t" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 03.png" id="4_moy05"]
+[ext_resource type="Texture2D" uid="uid://ddkk7q71h7wpp" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 04.png" id="5_xrfw3"]
+[ext_resource type="Texture2D" uid="uid://c86x0nxhuxb5t" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 05.png" id="6_pb3ol"]
+[ext_resource type="Texture2D" uid="uid://lu834m0n0lob" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 06.png" id="7_dtjuk"]
+[ext_resource type="Texture2D" uid="uid://b4odrtl2biqip" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 07.png" id="8_saevn"]
+[ext_resource type="Texture2D" uid="uid://0bdrnd26lgvg" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 08.png" id="9_7ov4j"]
+[ext_resource type="Texture2D" uid="uid://cjug70flurqnw" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 09.png" id="10_vnx8g"]
+
+[sub_resource type="Animation" id="Animation_k4u8e"]
+resource_name = "idle"
+length = 0.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("1_mne6h"), ExtResource("3_tkhuq"), ExtResource("4_moy05"), ExtResource("5_xrfw3"), ExtResource("6_pb3ol"), ExtResource("7_dtjuk"), ExtResource("8_saevn"), ExtResource("9_7ov4j"), ExtResource("10_vnx8g")]
+}
+
+[sub_resource type="Animation" id="Animation_qobl2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mne6h")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_orun8"]
+_data = {
+"RESET": SubResource("Animation_qobl2"),
+"idle": SubResource("Animation_k4u8e")
+}
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vurne"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_403o6"]
 height = 22.0
 
 [node name="Crabby" type="CharacterBody2D"]
+script = ExtResource("1_76mg2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_mne6h")
+offset = Vector2(0, -13)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_orun8")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
+tree_root = SubResource("AnimationNodeStateMachine_vurne")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 2)
+position = Vector2(1, -11)
 shape = SubResource("CapsuleShape2D_403o6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
