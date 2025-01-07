@@ -37,13 +37,13 @@ position = Vector2(629, 549)
 [node name="FierceTooth" parent="." instance=ExtResource("5_pnekg")]
 position = Vector2(528, 546)
 
-[node name="Player" type="Node" parent="FierceTooth"]
-script = ExtResource("3_mg0n8")
-
-[node name="Camera2D" type="Camera2D" parent="FierceTooth"]
-position = Vector2(46, -55)
-zoom = Vector2(3, 3)
-position_smoothing_speed = 10.0
-
 [node name="PinkStar" parent="." instance=ExtResource("7_0t2wb")]
 position = Vector2(490, 550)
+
+[node name="Player" type="Node" parent="PinkStar"]
+script = ExtResource("3_mg0n8")
+
+[node name="Camera2D" type="Camera2D" parent="PinkStar"]
+position = Vector2(84, -59)
+zoom = Vector2(3, 3)
+position_smoothing_speed = 10.0
