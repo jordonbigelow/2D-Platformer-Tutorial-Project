@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://vvq4gvawdmej"]
+[gd_scene load_steps=6 format=3 uid="uid://vvq4gvawdmej"]
 
 [ext_resource type="Texture2D" uid="uid://y5xxcdlvuaef" path="res://icon.svg" id="1_du7mm"]
 [ext_resource type="PackedScene" uid="uid://dvstklm2n57lb" path="res://scenes/characters/roger.tscn" id="2_pckv8"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="3_mg0n8"]
+[ext_resource type="PackedScene" uid="uid://b8lisg638c7px" path="res://scenes/characters/crabby.tscn" id="4_i4ed8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yrk4d"]
 size = Vector2(128.5, 128)
@@ -38,4 +39,4 @@ position = Vector2(0, -60)
 zoom = Vector2(3, 3)
 position_smoothing_speed = 10.0
 
-[node name="Crabby" type="CharacterBody2D" parent="."]
+[node name="Crabby" parent="." instance=ExtResource("4_i4ed8")]
