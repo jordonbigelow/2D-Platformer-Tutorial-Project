@@ -1,5 +1,15 @@
-[gd_scene format=3 uid="uid://b8lisg638c7px"]
+[gd_scene load_steps=3 format=3 uid="uid://b8lisg638c7px"]
+
+[ext_resource type="Texture2D" uid="uid://d3p50fypxyrdd" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="1_mne6h"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_403o6"]
+height = 22.0
 
 [node name="Crabby" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mne6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_403o6")
