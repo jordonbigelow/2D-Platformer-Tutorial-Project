@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://b8lisg638c7px"]
+[gd_scene load_steps=44 format=3 uid="uid://b8lisg638c7px"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_76mg2"]
 [ext_resource type="Texture2D" uid="uid://d3p50fypxyrdd" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="1_mne6h"]
@@ -130,7 +130,56 @@ _data = {
 "run": SubResource("Animation_e0w5n")
 }
 
-[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vurne"]
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_tibg1"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_7b8x3"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_u2rld"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_waphd"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_78sit"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_wijvy"]
+states/Locomotion/node = SubResource("AnimationNodeStateMachine_78sit")
+states/Locomotion/position = Vector2(418.5, 100)
+graph_offset = Vector2(-50.625, -401.962)
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bux5h"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_q63qj"]
+advance_mode = 2
+advance_expression = "velocity.y > 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tctg0"]
+advance_mode = 2
+advance_expression = "velocity.y >= 0"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c822i"]
+advance_mode = 2
+advance_expression = "is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gmkv2"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ugre4"]
+advance_mode = 2
+advance_expression = "not is_on_floor()"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_sox17"]
+states/Attack/node = SubResource("AnimationNodeStateMachine_tibg1")
+states/Attack/position = Vector2(653.5, 99.5)
+states/Fall/node = SubResource("AnimationNodeStateMachine_7b8x3")
+states/Fall/position = Vector2(419.188, -153.193)
+states/Ground/node = SubResource("AnimationNodeStateMachine_u2rld")
+states/Ground/position = Vector2(588.875, -49.4425)
+states/Jump/node = SubResource("AnimationNodeStateMachine_waphd")
+states/Jump/position = Vector2(266.875, -48.6925)
+states/Movement/node = SubResource("AnimationNodeStateMachine_wijvy")
+states/Movement/position = Vector2(417.5, 97.75)
+transitions = ["Start", "Movement", SubResource("AnimationNodeStateMachineTransition_bux5h"), "Movement", "Jump", SubResource("AnimationNodeStateMachineTransition_q63qj"), "Jump", "Fall", SubResource("AnimationNodeStateMachineTransition_tctg0"), "Fall", "Ground", SubResource("AnimationNodeStateMachineTransition_c822i"), "Ground", "Movement", SubResource("AnimationNodeStateMachineTransition_gmkv2"), "Movement", "Fall", SubResource("AnimationNodeStateMachineTransition_ugre4")]
+graph_offset = Vector2(-50.6249, -168.693)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_403o6"]
 height = 22.0
@@ -148,7 +197,7 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
-tree_root = SubResource("AnimationNodeStateMachine_vurne")
+tree_root = SubResource("AnimationNodeStateMachine_sox17")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -11)
