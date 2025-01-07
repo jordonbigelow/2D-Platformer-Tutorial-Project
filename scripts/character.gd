@@ -13,6 +13,7 @@ extends CharacterBody2D
 @export var _jump_dust: PackedScene
 
 @onready var _sprite: Sprite2D = $Sprite2D
+@export var is_flipped_h: bool = false
 
 var _jump_velocity: float
 var _direction: float
@@ -21,6 +22,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func _ready() -> void:
+	_sprite.flip_h = is_flipped_h
 	_speed *= Global.ppt
 	_acceleration *= Global.ppt
 	_deceleration *= Global.ppt
@@ -69,11 +71,10 @@ func _spawn_dust(dust: PackedScene) -> void:
 	get_parent().add_child(_dust)
 
 func face_left():
-	_sprite.flip_h = true
-
+	_sprite.flip_h = not is_flipped_h
 
 func face_right():
-	_sprite.flip_h = false
+	_sprite.flip_h = is_flipped_h
 
 
 func run(direction: float):
