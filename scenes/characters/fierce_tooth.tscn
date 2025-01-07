@@ -148,8 +148,8 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]
 tree_root = SubResource("AnimationNodeStateMachine_8uda2")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -11)
 shape = SubResource("CapsuleShape2D_1t3in")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
