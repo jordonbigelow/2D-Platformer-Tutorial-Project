@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-#const JUMP_VELOCITY = -400.0
+@export var is_flipped_h: bool
 
 @export_category("Locomotion")
 @export var _speed: float = 8.0
@@ -13,7 +13,6 @@ extends CharacterBody2D
 @export var _jump_dust: PackedScene
 
 @onready var _sprite: Sprite2D = $Sprite2D
-@export var is_flipped_h: bool = false
 
 var _jump_velocity: float
 var _direction: float
@@ -70,8 +69,10 @@ func _spawn_dust(dust: PackedScene) -> void:
 	_dust.flip_h = _sprite.flip_h
 	get_parent().add_child(_dust)
 
+
 func face_left():
 	_sprite.flip_h = not is_flipped_h
+
 
 func face_right():
 	_sprite.flip_h = is_flipped_h
