@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b8lisg638c7px"]
+[gd_scene load_steps=23 format=3 uid="uid://b8lisg638c7px"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_76mg2"]
 [ext_resource type="Texture2D" uid="uid://d3p50fypxyrdd" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 01.png" id="1_mne6h"]
@@ -10,6 +10,12 @@
 [ext_resource type="Texture2D" uid="uid://b4odrtl2biqip" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 07.png" id="8_saevn"]
 [ext_resource type="Texture2D" uid="uid://0bdrnd26lgvg" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 08.png" id="9_7ov4j"]
 [ext_resource type="Texture2D" uid="uid://cjug70flurqnw" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/01-Idle/Idle 09.png" id="10_vnx8g"]
+[ext_resource type="Texture2D" uid="uid://whs4gwonaf4m" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 01.png" id="11_1lut0"]
+[ext_resource type="Texture2D" uid="uid://pbbvlt7dm1n0" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 02.png" id="12_nq6h1"]
+[ext_resource type="Texture2D" uid="uid://c0f132md3eq8x" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 03.png" id="13_f053m"]
+[ext_resource type="Texture2D" uid="uid://7e3bq82ntt65" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 04.png" id="14_hij54"]
+[ext_resource type="Texture2D" uid="uid://bhln417tmd4qf" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 05.png" id="15_f54dd"]
+[ext_resource type="Texture2D" uid="uid://c3agok3rg2en0" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Crabby/02-Run/Run 06.png" id="16_8qc6q"]
 
 [sub_resource type="Animation" id="Animation_k4u8e"]
 resource_name = "idle"
@@ -43,10 +49,28 @@ tracks/0/keys = {
 "values": [ExtResource("1_mne6h")]
 }
 
+[sub_resource type="Animation" id="Animation_e0w5n"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_1lut0"), ExtResource("12_nq6h1"), ExtResource("13_f053m"), ExtResource("14_hij54"), ExtResource("15_f54dd"), ExtResource("16_8qc6q")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_orun8"]
 _data = {
 "RESET": SubResource("Animation_qobl2"),
-"idle": SubResource("Animation_k4u8e")
+"idle": SubResource("Animation_k4u8e"),
+"run": SubResource("Animation_e0w5n")
 }
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vurne"]
