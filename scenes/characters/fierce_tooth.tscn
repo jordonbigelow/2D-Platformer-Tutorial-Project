@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://144n6wv8m4rq"]
+[gd_scene load_steps=30 format=3 uid="uid://144n6wv8m4rq"]
 
 [ext_resource type="Texture2D" uid="uid://djiugi7lkcawv" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="1_xtlcm"]
 [ext_resource type="Texture2D" uid="uid://b52k3wit78vli" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 02.png" id="2_s5fui"]
@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://b1de50k68pjfh" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 02.png" id="16_erdtk"]
 [ext_resource type="Texture2D" uid="uid://b2u5wx0avr4ha" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 03.png" id="17_i0x0m"]
 [ext_resource type="Texture2D" uid="uid://bxxhocdsexp3j" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/04-Fall/Fall 01.png" id="18_iavyl"]
+[ext_resource type="Texture2D" uid="uid://bivxtfxmwnka0" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/05-Ground/Ground 01.png" id="19_ed6a5"]
+[ext_resource type="Texture2D" uid="uid://clwh3sdlbd2k2" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/05-Ground/Ground 02.png" id="20_ayn6u"]
 
 [sub_resource type="Animation" id="Animation_ofhbt"]
 resource_name = "idle"
@@ -100,10 +102,27 @@ tracks/0/keys = {
 "values": [ExtResource("18_iavyl")]
 }
 
+[sub_resource type="Animation" id="Animation_2kjqd"]
+resource_name = "ground"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("19_ed6a5"), ExtResource("20_ayn6u")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtfks"]
 _data = {
 "RESET": SubResource("Animation_817fc"),
 "fall": SubResource("Animation_lo4ex"),
+"ground": SubResource("Animation_2kjqd"),
 "idle": SubResource("Animation_ofhbt"),
 "jump": SubResource("Animation_kcaml"),
 "run": SubResource("Animation_ft6k5")
