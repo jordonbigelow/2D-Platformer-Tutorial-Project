@@ -34,16 +34,16 @@ position = Vector2(574, 551)
 [node name="Crabby" parent="." instance=ExtResource("4_i4ed8")]
 position = Vector2(629, 549)
 
+[node name="Player" type="Node" parent="Crabby"]
+script = ExtResource("3_mg0n8")
+
+[node name="Camera2D" type="Camera2D" parent="Crabby"]
+position = Vector2(-55, -58)
+zoom = Vector2(3, 3)
+position_smoothing_speed = 10.0
+
 [node name="FierceTooth" parent="." instance=ExtResource("5_pnekg")]
 position = Vector2(528, 546)
 
 [node name="PinkStar" parent="." instance=ExtResource("7_0t2wb")]
 position = Vector2(490, 550)
-
-[node name="Player" type="Node" parent="PinkStar"]
-script = ExtResource("3_mg0n8")
-
-[node name="Camera2D" type="Camera2D" parent="PinkStar"]
-position = Vector2(84, -59)
-zoom = Vector2(3, 3)
-position_smoothing_speed = 10.0
