@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://144n6wv8m4rq"]
+[gd_scene load_steps=57 format=3 uid="uid://144n6wv8m4rq"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_3tf57"]
 [ext_resource type="Texture2D" uid="uid://djiugi7lkcawv" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="1_xtlcm"]
@@ -20,10 +20,13 @@
 [ext_resource type="Texture2D" uid="uid://b1de50k68pjfh" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 02.png" id="16_erdtk"]
 [ext_resource type="PackedScene" uid="uid://cyqo2tppomi8i" path="res://scenes/Dust/run_dust.tscn" id="17_7crxh"]
 [ext_resource type="Texture2D" uid="uid://b2u5wx0avr4ha" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/03-Jump/Jump 03.png" id="17_i0x0m"]
+[ext_resource type="AudioStream" uid="uid://bfd5fxpsvw85j" path="res://assets/Sound FX/13289__lukesharples__battle-sounds/209133__lukesharples__fall-to-the-floor.wav" id="18_3728s"]
 [ext_resource type="Texture2D" uid="uid://bxxhocdsexp3j" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/04-Fall/Fall 01.png" id="18_iavyl"]
 [ext_resource type="Texture2D" uid="uid://bivxtfxmwnka0" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/05-Ground/Ground 01.png" id="19_ed6a5"]
+[ext_resource type="AudioStream" uid="uid://d2f0wiwuhn2bs" path="res://assets/Sound FX/13289__lukesharples__battle-sounds/209171__lukesharples__hagh.wav" id="19_ryasx"]
 [ext_resource type="Texture2D" uid="uid://clwh3sdlbd2k2" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/05-Ground/Ground 02.png" id="20_ayn6u"]
 [ext_resource type="PackedScene" uid="uid://c781mveweswpp" path="res://scenes/Dust/fall_dust.tscn" id="24_8gwvu"]
+[ext_resource type="AudioStream" uid="uid://c0wlclbsikbml" path="res://assets/Sound FX/13289__lukesharples__battle-sounds/209195__lukesharples__shoes2.wav" id="27_e55uh"]
 
 [sub_resource type="Animation" id="Animation_817fc"]
 length = 0.001
@@ -85,6 +88,21 @@ tracks/1/keys = {
 "method": &"_spawn_dust"
 }]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AudioStreamPlayer2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("18_3728s")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ofhbt"]
 resource_name = "idle"
@@ -118,6 +136,21 @@ tracks/0/keys = {
 "update": 1,
 "values": [ExtResource("15_7ryrf"), ExtResource("16_erdtk"), ExtResource("17_i0x0m")]
 }
+tracks/1/type = "audio"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../AudioStreamPlayer2D")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"clips": [{
+"end_offset": 0.56,
+"start_offset": 0.0,
+"stream": ExtResource("19_ryasx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/1/use_blend = true
 
 [sub_resource type="Animation" id="Animation_ft6k5"]
 resource_name = "run"
@@ -149,6 +182,21 @@ tracks/1/keys = {
 "method": &"_spawn_dust"
 }]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AudioStreamPlayer2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 19.4,
+"start_offset": 0.1,
+"stream": ExtResource("27_e55uh")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtfks"]
 _data = {
@@ -255,8 +303,8 @@ height = 22.0
 
 [node name="FierceTooth" type="CharacterBody2D"]
 script = ExtResource("1_3tf57")
-_jump_dust = ExtResource("2_6jpwv")
 is_flipped_h = true
+_jump_dust = ExtResource("2_6jpwv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xtlcm")
