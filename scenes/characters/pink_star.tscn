@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=3 uid="uid://cctdqgrtq003"]
+[gd_scene load_steps=56 format=3 uid="uid://cctdqgrtq003"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_2lefb"]
 [ext_resource type="Texture2D" uid="uid://c7m56wh6jbcq8" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="1_jtpwf"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bxatcdfae7x7o" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 01.png" id="19_k6loy"]
 [ext_resource type="Texture2D" uid="uid://bjnipaaw5fgxi" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/05-Ground/Ground 02.png" id="20_vwm47"]
 [ext_resource type="PackedScene" uid="uid://c781mveweswpp" path="res://scenes/Dust/fall_dust.tscn" id="24_nofqk"]
+[ext_resource type="AudioStream" uid="uid://c0wlclbsikbml" path="res://assets/Sound FX/13289__lukesharples__battle-sounds/209195__lukesharples__shoes2.wav" id="26_b7bur"]
 
 [sub_resource type="Animation" id="Animation_ms1ej"]
 length = 0.001
@@ -165,6 +166,21 @@ tracks/1/keys = {
 "method": &"_spawn_dust"
 }]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AudioStreamPlayer2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 19.28,
+"start_offset": 0.15,
+"stream": ExtResource("26_b7bur")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_acryj"]
 _data = {
