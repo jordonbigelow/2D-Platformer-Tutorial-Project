@@ -66,7 +66,10 @@ func _air_physics(delta: float) -> void:
 func _spawn_dust(dust: PackedScene) -> void:
 	var _dust = dust.instantiate()
 	_dust.position = position
-	_dust.flip_h = _sprite.flip_h
+	if is_flipped_h:
+		_dust.flip_h = not _sprite.flip_h
+	else:
+		_dust.flip_h = _sprite.flip_h
 	get_parent().add_child(_dust)
 
 
