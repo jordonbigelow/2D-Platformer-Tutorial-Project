@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://cctdqgrtq003"]
+[gd_scene load_steps=57 format=3 uid="uid://cctdqgrtq003"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_2lefb"]
 [ext_resource type="Texture2D" uid="uid://c7m56wh6jbcq8" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="1_jtpwf"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d0etni5u1xt7a" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 05.png" id="5_irm7p"]
 [ext_resource type="Texture2D" uid="uid://bv7qeb8kppyh5" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 06.png" id="6_tgfyj"]
 [ext_resource type="Texture2D" uid="uid://b2d2apemuvkwd" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 07.png" id="7_ealhh"]
+[ext_resource type="AudioStream" uid="uid://bfd5fxpsvw85j" path="res://assets/Sound FX/13289__lukesharples__battle-sounds/209133__lukesharples__fall-to-the-floor.wav" id="8_atswx"]
 [ext_resource type="Texture2D" uid="uid://bpwgs12hr6qtj" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 08.png" id="8_ht1fk"]
 [ext_resource type="Texture2D" uid="uid://bvtsee0klqlls" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 01.png" id="9_f0cbh"]
 [ext_resource type="Texture2D" uid="uid://dl25qr6hki3k0" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Pink Star/02-Run/Run 02.png" id="10_jfryb"]
@@ -87,6 +88,21 @@ tracks/1/keys = {
 "method": &"_spawn_dust"
 }]
 }
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../AudioStreamPlayer2D")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("8_atswx")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
 
 [sub_resource type="Animation" id="Animation_tpb6f"]
 resource_name = "idle"
