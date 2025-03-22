@@ -1,6 +1,6 @@
 [gd_scene load_steps=57 format=3 uid="uid://144n6wv8m4rq"]
 
-[ext_resource type="Script" path="res://scripts/character.gd" id="1_3tf57"]
+[ext_resource type="Script" uid="uid://c40d8m13n5ct8" path="res://scripts/character.gd" id="1_3tf57"]
 [ext_resource type="Texture2D" uid="uid://djiugi7lkcawv" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 01.png" id="1_xtlcm"]
 [ext_resource type="PackedScene" uid="uid://bp4d82ipji6pn" path="res://scenes/Dust/jump_dust.tscn" id="2_6jpwv"]
 [ext_resource type="Texture2D" uid="uid://b52k3wit78vli" path="res://assets/Pixel Art/Treasure Hunters/The Crusty Crew/Sprites/Fierce Tooth/01-Idle/Idle 02.png" id="2_s5fui"]
@@ -200,12 +200,12 @@ tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qtfks"]
 _data = {
-"RESET": SubResource("Animation_817fc"),
-"fall": SubResource("Animation_lo4ex"),
-"ground": SubResource("Animation_2kjqd"),
-"idle": SubResource("Animation_ofhbt"),
-"jump": SubResource("Animation_kcaml"),
-"run": SubResource("Animation_ft6k5")
+&"RESET": SubResource("Animation_817fc"),
+&"fall": SubResource("Animation_lo4ex"),
+&"ground": SubResource("Animation_2kjqd"),
+&"idle": SubResource("Animation_ofhbt"),
+&"jump": SubResource("Animation_kcaml"),
+&"run": SubResource("Animation_ft6k5")
 }
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_0ffbc"]
@@ -312,7 +312,7 @@ offset = Vector2(0, -13)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_qtfks")
+&"": SubResource("AnimationLibrary_qtfks")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]

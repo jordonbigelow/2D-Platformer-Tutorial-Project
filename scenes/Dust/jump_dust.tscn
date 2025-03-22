@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cn0wl6ft4gc40" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 04.png" id="4_i3url"]
 [ext_resource type="Texture2D" uid="uid://dl5ovpeav65gi" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 05.png" id="5_3l53q"]
 [ext_resource type="Texture2D" uid="uid://cwbjmn5a0eeso" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Dust Particles/Jump 06.png" id="6_hkdkl"]
-[ext_resource type="Script" path="res://scripts/dust.gd" id="7_o2doi"]
+[ext_resource type="Script" uid="uid://dgbnracrrpeqx" path="res://scripts/dust.gd" id="7_o2doi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_5kby5"]
 animations = [{

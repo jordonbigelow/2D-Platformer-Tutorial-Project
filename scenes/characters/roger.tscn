@@ -1,6 +1,6 @@
 [gd_scene load_steps=54 format=3 uid="uid://dvstklm2n57lb"]
 
-[ext_resource type="Script" path="res://scripts/character.gd" id="1_0e4vp"]
+[ext_resource type="Script" uid="uid://c40d8m13n5ct8" path="res://scripts/character.gd" id="1_0e4vp"]
 [ext_resource type="Texture2D" uid="uid://dbotojh23us1j" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="1_lbwtm"]
 [ext_resource type="PackedScene" uid="uid://bp4d82ipji6pn" path="res://scenes/Dust/jump_dust.tscn" id="2_68k5f"]
 [ext_resource type="Texture2D" uid="uid://dwc3xbspaacdc" path="res://assets/Pixel Art/Treasure Hunters/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="3_ldjnj"]
@@ -197,12 +197,12 @@ tracks/2/use_blend = true
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sintj"]
 _data = {
-"RESET": SubResource("Animation_q0pg5"),
-"fall": SubResource("Animation_8gfw8"),
-"ground": SubResource("Animation_urft3"),
-"idle": SubResource("Animation_7wmjr"),
-"jump": SubResource("Animation_12nsi"),
-"run": SubResource("Animation_vjeqx")
+&"RESET": SubResource("Animation_q0pg5"),
+&"fall": SubResource("Animation_8gfw8"),
+&"ground": SubResource("Animation_urft3"),
+&"idle": SubResource("Animation_7wmjr"),
+&"jump": SubResource("Animation_12nsi"),
+&"run": SubResource("Animation_vjeqx")
 }
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_0ffbc"]
@@ -308,7 +308,7 @@ texture = ExtResource("1_lbwtm")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
 libraries = {
-"": SubResource("AnimationLibrary_sintj")
+&"": SubResource("AnimationLibrary_sintj")
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="Sprite2D/AnimationPlayer"]

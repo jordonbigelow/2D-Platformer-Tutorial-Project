@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://vvq4gvawdmej"]
 
-[ext_resource type="Texture2D" uid="uid://y5xxcdlvuaef" path="res://icon.svg" id="1_du7mm"]
+[ext_resource type="Texture2D" uid="uid://bsburxvam8pgu" path="res://icon.svg" id="1_du7mm"]
 [ext_resource type="PackedScene" uid="uid://dvstklm2n57lb" path="res://scenes/characters/roger.tscn" id="2_pckv8"]
-[ext_resource type="Script" path="res://scripts/player.gd" id="3_mg0n8"]
+[ext_resource type="Script" uid="uid://b40ji2hi4tw8n" path="res://scripts/player.gd" id="3_mg0n8"]
 [ext_resource type="PackedScene" uid="uid://b8lisg638c7px" path="res://scenes/characters/crabby.tscn" id="4_i4ed8"]
 [ext_resource type="PackedScene" uid="uid://144n6wv8m4rq" path="res://scenes/characters/fierce_tooth.tscn" id="5_pnekg"]
 [ext_resource type="PackedScene" uid="uid://cctdqgrtq003" path="res://scenes/characters/pink_star.tscn" id="7_0t2wb"]
@@ -37,13 +37,13 @@ position = Vector2(629, 549)
 [node name="FierceTooth" parent="." instance=ExtResource("5_pnekg")]
 position = Vector2(528, 546)
 
-[node name="Player" type="Node" parent="FierceTooth"]
-script = ExtResource("3_mg0n8")
-
-[node name="Camera2D" type="Camera2D" parent="FierceTooth"]
-position = Vector2(46, -55)
-zoom = Vector2(3, 3)
-position_smoothing_speed = 10.0
-
 [node name="PinkStar" parent="." instance=ExtResource("7_0t2wb")]
 position = Vector2(490, 550)
+
+[node name="Player" type="Node" parent="PinkStar"]
+script = ExtResource("3_mg0n8")
+
+[node name="Camera2D" type="Camera2D" parent="PinkStar"]
+position = Vector2(84, -59)
+zoom = Vector2(3, 3)
+position_smoothing_speed = 10.0
